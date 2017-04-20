@@ -1,0 +1,28 @@
+{
+    "tests": [
+        {
+            "description": "the naked_twins method applies the 'naked twins' heuristic.",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/vmuser_xjfagdqs/utils.py\", line 129, in func_wrapper\n    return func(self)\n  File \"run3.py\", line 67, in test_naked_twins\n    values = solution.naked_twins(values)\n  File \"/home/vmuser_xjfagdqs/workspace/solution.py\", line 32, in naked_twins\n    for peer in peers[box]:\nNameError: name 'peers' is not defined\n",
+            "message": null,
+            "advice": null,
+            "result": "E",
+            "rubric_item_id": "5531"
+        },
+        {
+            "description": "the solve method produces a valid solution.",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/vmuser_xjfagdqs/utils.py\", line 129, in func_wrapper\n    return func(self)\n  File \"run3.py\", line 93, in test_solve\n    values = solution.solve(grid.rstrip())\n  File \"/home/vmuser_xjfagdqs/workspace/solution.py\", line 173, in solve\n    values = grid_values(grid)\n  File \"/home/vmuser_xjfagdqs/workspace/solution.py\", line 78, in grid_values\n    return dict(zip(boxes, chars))\nNameError: name 'boxes' is not defined\n",
+            "message": null,
+            "advice": "Try your code on the following example:\n9.1....8.8.5.7..4.2.4....6...7......5..............83.3..6......9................\n",
+            "result": "E",
+            "rubric_item_id": "5530"
+        },
+        {
+            "description": "the README has been modified.",
+            "traceback": "Traceback (most recent call last):\n  File \"run3.py\", line 124, in test_readme\n    advice = 'Please answer the questions provided in the README.')\n  File \"/home/vmuser_xjfagdqs/utils.py\", line 37, in assertNotEqual\n    super(AINDTestCase, self).assertNotEqual(a, b, msg)\nAssertionError: 0 == 0 : \n",
+            "message": null,
+            "advice": "Please answer the questions provided in the README.",
+            "result": "F",
+            "rubric_item_id": null
+        }
+    ]
+}
